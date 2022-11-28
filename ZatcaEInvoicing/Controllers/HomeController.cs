@@ -19,7 +19,7 @@ namespace ZatcaEInvoicing.Controllers
     public class HomeController : Controller
     {
         #region PRMs
-        private readonly string filePath = "C:\\Users\\Hassan\\Desktop\\test.xml";
+        private readonly string filePath = Environment.GetFolderPath(Environment.SpecialFolder.Desktop)+"\\Text.xml";
         ZatcaAppService zatcaAppService = new ZatcaAppService();
         HashingValidator _IHashingValidator = new SDKNETFrameWorkLib.BLL.HashingValidator();
         QRValidator _IQRValidator = new SDKNETFrameWorkLib.BLL.QRValidator();
